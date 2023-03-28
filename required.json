@@ -1,0 +1,82 @@
+{
+    "customer":{
+        "name":{
+            "type": "str",
+            "required": true
+        },
+        "email":{
+            "type":"str",
+            "required": true
+        },
+        "phone_number":{
+            "type":"str",
+            "required": true
+        },
+        "address":{
+            "type":"str",
+            "required":true
+        },
+        "active":{
+            "type":"bool",
+            "required":false
+        }
+    },
+    "drone_shot":{
+        "nick_name":{
+            "type":"str",
+            "required":true
+        },
+        "shot_type":{
+            "type":"str",
+            "required":true
+        },
+        "specifications":{
+            "type":"str",
+            "required":false
+        },
+        "price":{
+            "type":"int",
+            "required":true
+        },
+        "active":{
+            "type":"bool",
+            "required":true
+        }
+    },
+    "location": {
+        "address":{
+            "type":"str",
+            "required":true
+        },
+        "city":{
+            "type":"str",
+            "required":true
+        },
+        "district":{
+            "type":"str",
+            "required":true
+        },
+        "state":{
+            "type":"str",
+            "required":true
+        },
+        "pincode":{
+            "type":"str",
+            "required":true
+        }
+    },
+    "booking": {
+        "customer_id":{
+            "type":"str",
+            "required":true
+        },
+        "location_id":{
+            "type":"str",
+            "required":true
+        },
+        "drone_shot_id":{
+            "type":"str",
+            "required":true
+        }
+    }
+}
