@@ -1,6 +1,6 @@
 /************* Drone-Shot booking system ************/
 
-schema:
+******************** Database schema *****************
     customer:
         attributes:
             1. name : string
@@ -57,24 +57,24 @@ schema:
                 "pincode": 506167
             }
 
-booking:
-    attributes:
-        1. customer_id : int -> reference to customer schema
-        2. drone_shot_id: int -> reference to drone_shot schema
-        3. location_id : int -> reference to location schema
-        4. booking_id : int
+    booking:
+        attributes:
+            1. customer_id : int -> reference to customer schema
+            2. drone_shot_id: int -> reference to drone_shot schema
+            3. location_id : int -> reference to location schema
+            4. booking_id : int
 
-    Example : 
-        {
-            "customer_id": "CUST00000001",
-            "drone_shot_id": "DRST00000001",
-            "location_id": "LOC00000001",
-            "booking_id": "BKNG00000001"
-        }
+        Example : 
+            {
+                "customer_id": "CUST00000001",
+                "drone_shot_id": "DRST00000001",
+                "location_id": "LOC00000001",
+                "booking_id": "BKNG00000001"
+            }
+---------------------------------------------------------------
 
 
-
-Endpoints:
+******************** Endpoints **************************
 
     customer:
         get single customer -> /api/customer/{customer_id}
@@ -112,8 +112,9 @@ Endpoints:
     2. req body validation
     3. proper error messages
     4. Database: json files
+--------------------------------------------------------------
 
-sample db format:
+**********  sample db format ********************************
 
     DB/
         customer/
@@ -131,7 +132,7 @@ sample db format:
             BKNG0000002.json
 
 
-    sample file content:
+sample file content:
     customer:
     {
 
@@ -178,6 +179,25 @@ sample db format:
     }
     
 
+********* Start Application ***************
+Github link: {link}
+Demo link: {link}
+requrements:
+    1. python, flask
+
+steps:
+    1. clone the repository
+        cmd: git clone {githublink}
+    
+    2. install python
+    3. install flask 
+        cmd: pip install flask
+    
+    4. run the application:
+        cmd python app.py
+        - application runs at 127.0.0.1:5000
+        
+    
 
 
 
