@@ -180,14 +180,14 @@ sample file content:
     
 
 ********* Start Application ***************
-Github link: {link}
-Demo link: {link}
+Github link: {https://github.com/HarishJangam/drone_shot}
+Demo link: {https://github.com/HarishJangam/drone_shot}
 requrements:
     1. python, flask
 
 steps:
     1. clone the repository
-        cmd: git clone {githublink}
+        cmd: git clone {https://github.com/HarishJangam/drone_shot}
     
     2. install python
     3. install flask 
@@ -196,6 +196,8 @@ steps:
     4. run the application:
         cmd python app.py
         - application runs at 127.0.0.1:5000
+
+-------------------------------------------------------------------
         
     
 
